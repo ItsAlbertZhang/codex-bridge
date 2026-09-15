@@ -1,0 +1,11 @@
+# Optional defaults for newly created threads. Replace the placeholders before use.
+# Omit any key to leave that setting to the server; CLI model/effort take priority.
+
+[codex]
+model = "<model id from your provider's catalog>"
+effort = "<effort>"
+
+[dsh]
+provider = "<provider id>"
+model = "<model id from your provider's catalog>"
+effort = "<effort>"

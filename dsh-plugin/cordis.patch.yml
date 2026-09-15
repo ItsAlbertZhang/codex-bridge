@@ -1,0 +1,11 @@
+# The bundle patch layer shipped with dsh-bridge-plugin.
+# Once installed in a profile, it is appended to dsh.profile.bundles (base -> web-app -> this layer),
+# so this row is inserted after all the web-app rows.
+# port is evaluated with !!js, letting the daemon override it through DSH_BRIDGE_PORT without editing this file.
+- insert:
+    - id: dsh-bridge
+      name: dsh-bridge-plugin
+      config:
+        host: 127.0.0.1
+        port: !!js Number(process.env.DSH_BRIDGE_PORT ?? 12898)
+        agentPreset: standard

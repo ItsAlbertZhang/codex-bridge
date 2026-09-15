@@ -1,0 +1,7 @@
+/target
+dsh-plugin/node_modules/
+dsh-plugin/lib/
+dsh-plugin/.m0/
+dsh-plugin/*.tgz
+dsh-plugin/*.tsbuildinfo
+.e2e/
